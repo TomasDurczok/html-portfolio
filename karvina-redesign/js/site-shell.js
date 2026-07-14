@@ -262,7 +262,7 @@
         <span>Copyright © Statutární město Karviná · Návrh redesignu ve stylu Apple</span>
       </div>
     </footer>
-    <div class="prototype-badge">Apple style · v4</div>`;
+    <div class="prototype-badge">Karviná · Premium v5</div>`;
   }
 
   function renderSidebar(sectionKey, activeHref) {
