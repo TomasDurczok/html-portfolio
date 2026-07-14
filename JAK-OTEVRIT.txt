@@ -1,0 +1,38 @@
+═══════════════════════════════════════════════════════
+  JAK OTEVŘÍT NÁHLED REDESIGNU WEBU KARVINA.CZ
+═══════════════════════════════════════════════════════
+
+DŮLEŽITÉ: V archivu jsou DVĚ různé věci!
+
+  ✗ ŠPATNĚ → index.html (v hlavní složce)
+             = starý cvičný web „Angela Portfolio“
+             TO NENÍ KARVINÁ!
+
+  ✓ SPRÁVNĚ → soubor OTEVRIT-KARVINA-REDESIGN.html
+             (v hlavní složce po rozbalení ZIP)
+
+     NEBO
+
+  ✓ SPRÁVNĚ → složka karvina-redesign → index.html
+
+
+POSTUP KROK ZA KROKEM:
+──────────────────────
+
+1. Stáhněte ZIP z tohoto odkazu:
+   https://github.com/TomasDurczok/html-portfolio/archive/refs/heads/cursor/karvina-redesign-cab4.zip
+
+2. Rozbalte ZIP (pravý klik → Rozbalit vše)
+
+3. Otevřete rozbalenou složku
+   (název: html-portfolio-cursor-karvina-redesign-cab4)
+
+4. Dvojklik na soubor:
+   OTEVRIT-KARVINA-REDESIGN.html
+
+5. Otevře se redesign webu Karviné v prohlížeči.
+
+
+POTŘEBUJETE INTERNET – obrázky se načítají z karvina.cz
+
+═══════════════════════════════════════════════════════
