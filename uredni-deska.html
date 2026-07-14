@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="cs">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Úřední deska | Magistrát Karviná</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="css/design-system.css">
+  <link rel="stylesheet" href="css/main.css">
+</head>
+<body data-active-nav="magistrat.html" data-sidebar="magistrat" data-sidebar-active="uredni-deska.html">
+  <div id="site-header"></div>
+  <main>
+    <div class="page-hero">
+      <div class="container">
+        <ol class="breadcrumb"><li><a href="index.html">Domů</a></li><li class="breadcrumb__sep">/</li><li><a href="magistrat.html">Magistrát</a></li><li class="breadcrumb__sep">/</li><li aria-current="page">Úřední deska</li></ol>
+        <h1>Úřední deska</h1>
+        <p class="page-hero__desc">Všechny aktuálně vyvěšené dokumenty magistrátu. Fyzicky u vchodů budov B a C na ul. Karola Śliwky.</p>
+      </div>
+    </div>
+    <div class="container">
+      <div class="page-layout">
+        <div id="site-sidebar"></div>
+        <div>
+          <form class="filter-bar">
+            <div style="flex:1;min-width:200px"><label class="label" for="doc-type">Typ dokumentů</label>
+              <select id="doc-type" class="select"><option>Všechny typy</option><option>Rozhodnutí magistrátu</option><option>Volby</option><option>Záměry</option><option>Dotace</option></select>
+            </div>
+            <div style="align-self:flex-end"><button type="button" class="btn btn--primary">Filtrovat</button></div>
+          </form>
+          <ul class="doc-list">
+            <li class="doc-list__item"><a href="podstranka.html?sekce=magistrat&stranka=uredni-deska">Jednotné environmentální stanovisko – Kosmonautů 630/60</a><p class="doc-list__meta">Informační povinnost</p></li>
+            <li class="doc-list__item"><a href="podstranka.html?sekce=magistrat&stranka=volby">Informace o počtu a sídlech volebních okrsků</a><p class="doc-list__meta">Volby</p></li>
+            <li class="doc-list__item"><a href="podstranka.html?sekce=magistrat&stranka=uredni-deska">Veřejná vyhláška – Přechodná úprava provozu I/67</a><p class="doc-list__meta">Rozhodnutí magistrátu</p></li>
+            <li class="doc-list__item"><a href="podstranka.html?sekce=magistrat&stranka=uredni-deska">Revitalizace veřejného prostranství kpt. Jaroše</a><p class="doc-list__meta">Záměry</p></li>
+            <li class="doc-list__item"><a href="podstranka.html?sekce=magistrat&stranka=dotace">Dotační program: Kreativní business 2026</a><p class="doc-list__meta">Dotace – Programy</p></li>
+          </ul>
+        </div>
+      </div>
+    </div>
+  </main>
+  <div id="site-footer"></div>
+  <script src="js/site-shell.js"></script>
+  <script src="js/main.js"></script>
+</body>
+</html>

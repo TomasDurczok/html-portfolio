@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="cs">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Magistrát města Karviná</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="css/design-system.css">
+  <link rel="stylesheet" href="css/main.css">
+</head>
+<body data-active-nav="magistrat.html" data-sidebar="magistrat" data-sidebar-active="magistrat.html">
+  <div id="site-header"></div>
+  <main>
+    <div class="page-hero">
+      <div class="container">
+        <ol class="breadcrumb"><li><a href="index.html">Domů</a></li><li class="breadcrumb__sep">/</li><li aria-current="page">Magistrát</li></ol>
+        <h1>Magistrát města Karviná</h1>
+        <p class="page-hero__desc">Online služby, úřední deska, podatelna a vše pro vyřízení záležitostí na magistrátu.</p>
+      </div>
+    </div>
+    <div class="container">
+      <div class="page-layout">
+        <div id="site-sidebar"></div>
+        <div>
+          <div class="quick-services__grid" style="margin-top:0">
+            <a href="uredni-deska.html" class="service-card" style="box-shadow:var(--shadow-sm)"><div class="service-card__icon"><svg fill="none" stroke="currentColor" stroke-width="2" viewBox="0 0 24 24"><path d="M14 2H6a2 2 0 0 0-2 2v16a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2V8z"/></svg></div><h3>Úřední deska</h3><p>Aktuálně vyvěšené dokumenty.</p><span class="service-card__link">Zobrazit →</span></a>
+            <a href="online-sluzby.html" class="service-card" style="box-shadow:var(--shadow-sm)"><div class="service-card__icon"><svg fill="none" stroke="currentColor" stroke-width="2" viewBox="0 0 24 24"><rect x="2" y="5" width="20" height="14" rx="2"/></svg></div><h3>Portál občana</h3><p>Formuláře a platby online.</p><span class="service-card__link">Portál →</span></a>
+            <a href="https://www.karvina.cz/magistrat/rezervacni-system-objednejte-se-online-1" class="service-card" style="box-shadow:var(--shadow-sm)"><div class="service-card__icon"><svg fill="none" stroke="currentColor" stroke-width="2" viewBox="0 0 24 24"><rect x="3" y="4" width="18" height="18" rx="2"/></svg></div><h3>Online rezervace</h3><p>Objednání na magistrát.</p><span class="service-card__link">Rezervovat →</span></a>
+          </div>
+          <div class="cta-banner"><div><h3>Potřebujete něco vyřídit?</h3><p>Průvodce úředními záležitostmi.</p></div><a href="potrebuji-vyridit.html" class="btn btn--secondary">Potřebuji vyřídit</a></div>
+          <div class="grid grid--2" style="margin-top:var(--space-xl)">
+            <a href="podstranka.html?sekce=magistrat&stranka=odbory" class="card" style="text-decoration:none;color:inherit"><div class="card__body"><h3 class="card__title">Členění magistrátu</h3></div></a>
+            <a href="podstranka.html?sekce=magistrat&stranka=samosprava" class="card" style="text-decoration:none;color:inherit"><div class="card__body"><h3 class="card__title">Samospráva</h3></div></a>
+            <a href="podstranka.html?sekce=magistrat&stranka=dotace" class="card" style="text-decoration:none;color:inherit"><div class="card__body"><h3 class="card__title">Granty a dotace</h3></div></a>
+            <a href="podstranka.html?sekce=magistrat&stranka=mapovy-portal" class="card" style="text-decoration:none;color:inherit"><div class="card__body"><h3 class="card__title">Mapový portál</h3></div></a>
+          </div>
+        </div>
+      </div>
+    </div>
+  </main>
+  <div id="site-footer"></div>
+  <script src="js/site-shell.js"></script>
+  <script src="js/main.js"></script>
+</body>
+</html>

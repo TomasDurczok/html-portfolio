@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="cs">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Organizace města | Karviná</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="css/design-system.css">
+  <link rel="stylesheet" href="css/main.css">
+</head>
+<body data-active-nav="organizace-mesta.html" data-sidebar="organizace" data-sidebar-active="organizace-mesta.html">
+  <div id="site-header"></div>
+  <main>
+    <div class="page-hero">
+      <div class="container">
+        <ol class="breadcrumb"><li><a href="index.html">Domů</a></li><li class="breadcrumb__sep">/</li><li aria-current="page">Organizace města</li></ol>
+        <h1>Organizace města</h1>
+        <p class="page-hero__desc">Přehled organizací zřizovaných statutárním městem Karviná a jejich aktuality.</p>
+      </div>
+    </div>
+    <div class="container">
+      <div class="page-layout">
+        <div id="site-sidebar"></div>
+        <div class="grid grid--2">
+          <a href="podstranka.html?sekce=organizace&stranka=aktuality" class="card" style="text-decoration:none;color:inherit"><div class="card__body"><h3 class="card__title">Aktuality a zprávy</h3><p class="card__excerpt">Novinky z organizací města.</p></div></a>
+          <a href="podstranka.html?sekce=organizace&stranka=seznam" class="card" style="text-decoration:none;color:inherit"><div class="card__body"><h3 class="card__title">Seznam organizací</h3><p class="card__excerpt">Kompletní přehled městských organizací.</p></div></a>
+        </div>
+      </div>
+    </div>
+  </main>
+  <div id="site-footer"></div>
+  <script src="js/site-shell.js"></script>
+  <script src="js/main.js"></script>
+</body>
+</html>
