@@ -3,142 +3,45 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <meta name="description" content="Úřední deska magistrátu města Karviná">
-  <title>Úřední deska | Magistrát města Karviná</title>
+  <title>Úřední deska | Magistrát Karviná</title>
   <link rel="preconnect" href="https://fonts.googleapis.com">
-  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet">
   <link rel="stylesheet" href="css/design-system.css">
   <link rel="stylesheet" href="css/main.css">
 </head>
-<body>
-
-  <header class="site-header" role="banner">
-    <div class="site-header__top"><div class="site-header__top-inner">
-      <a href="https://www.karvina.cz/user.php">Přihlášení</a>
-      <a href="https://www.karvina.cz/kontakty">Kontakty</a>
-    </div></div>
-    <div class="site-header__main">
-      <a href="index.html" class="site-header__logo"><img src="assets/logo.png" alt="Karviná" width="200" height="134"></a>
-      <nav class="site-header__nav" aria-label="Hlavní navigace">
-        <div class="nav-item"><button type="button">Magistrát <svg class="nav-item__chevron" fill="none" stroke="currentColor" stroke-width="2" viewBox="0 0 24 24"><path d="M6 9l6 6 6-6"/></svg></button>
-          <ul class="mega-menu">
-            <li><a href="magistrat.html">Přehled</a></li>
-            <li><a href="uredni-deska.html">Úřední deska</a></li>
+<body data-active-nav="magistrat.html" data-sidebar="magistrat" data-sidebar-active="uredni-deska.html">
+  <div id="site-header"></div>
+  <main>
+    <div class="page-hero">
+      <div class="container">
+        <ol class="breadcrumb"><li><a href="index.html">Domů</a></li><li class="breadcrumb__sep">/</li><li><a href="magistrat.html">Magistrát</a></li><li class="breadcrumb__sep">/</li><li aria-current="page">Úřední deska</li></ol>
+        <h1>Úřední deska</h1>
+        <p class="page-hero__desc">Všechny aktuálně vyvěšené dokumenty magistrátu. Fyzicky u vchodů budov B a C na ul. Karola Śliwky.</p>
+      </div>
+    </div>
+    <div class="container">
+      <div class="page-layout">
+        <div id="site-sidebar"></div>
+        <div>
+          <form class="filter-bar">
+            <div style="flex:1;min-width:200px"><label class="label" for="doc-type">Typ dokumentů</label>
+              <select id="doc-type" class="select"><option>Všechny typy</option><option>Rozhodnutí magistrátu</option><option>Volby</option><option>Záměry</option><option>Dotace</option></select>
+            </div>
+            <div style="align-self:flex-end"><button type="button" class="btn btn--primary">Filtrovat</button></div>
+          </form>
+          <ul class="doc-list">
+            <li class="doc-list__item"><a href="podstranka.html?sekce=magistrat&stranka=uredni-deska">Jednotné environmentální stanovisko – Kosmonautů 630/60</a><p class="doc-list__meta">Informační povinnost</p></li>
+            <li class="doc-list__item"><a href="podstranka.html?sekce=magistrat&stranka=volby">Informace o počtu a sídlech volebních okrsků</a><p class="doc-list__meta">Volby</p></li>
+            <li class="doc-list__item"><a href="podstranka.html?sekce=magistrat&stranka=uredni-deska">Veřejná vyhláška – Přechodná úprava provozu I/67</a><p class="doc-list__meta">Rozhodnutí magistrátu</p></li>
+            <li class="doc-list__item"><a href="podstranka.html?sekce=magistrat&stranka=uredni-deska">Revitalizace veřejného prostranství kpt. Jaroše</a><p class="doc-list__meta">Záměry</p></li>
+            <li class="doc-list__item"><a href="podstranka.html?sekce=magistrat&stranka=dotace">Dotační program: Kreativní business 2026</a><p class="doc-list__meta">Dotace – Programy</p></li>
           </ul>
         </div>
-      </nav>
-      <div class="site-header__actions">
-        <form class="search-form" action="https://www.karvina.cz/search.php" method="get" role="search">
-          <svg class="search-form__icon" fill="none" stroke="currentColor" stroke-width="2" viewBox="0 0 24 24"><circle cx="11" cy="11" r="8"/><path d="M21 21l-4.35-4.35"/></svg>
-          <input type="search" name="query" class="search-form__input" placeholder="Hledat…">
-          <input type="hidden" name="action" value="results">
-        </form>
-        <button class="menu-toggle" aria-label="Menu" type="button"><svg fill="none" stroke="currentColor" stroke-width="2" viewBox="0 0 24 24"><path d="M3 12h18M3 6h18M3 18h18"/></svg></button>
       </div>
     </div>
-  </header>
-
-  <div class="mobile-nav"><div class="mobile-nav__panel">
-    <button class="mobile-nav__close" type="button"><svg width="24" height="24" fill="none" stroke="currentColor" stroke-width="2" viewBox="0 0 24 24"><path d="M18 6L6 18M6 6l12 12"/></svg></button>
-    <ul class="mobile-nav__list"><li><a href="index.html">Domů</a></li><li><a href="uredni-deska.html">Úřední deska</a></li></ul>
-  </div></div>
-
-  <div class="page-hero">
-    <div class="container">
-      <nav aria-label="Drobečková navigace">
-        <ol class="breadcrumb">
-          <li><a href="index.html">Domů</a></li>
-          <li class="breadcrumb__sep">/</li>
-          <li><a href="magistrat.html">Magistrát</a></li>
-          <li class="breadcrumb__sep">/</li>
-          <li aria-current="page">Úřední deska</li>
-        </ol>
-      </nav>
-      <h1>Úřední deska</h1>
-      <p class="page-hero__desc">Úřední deska magistrátu je umístěna u vchodu do budovy B (ul. Karola Śliwky č. p. 618) a budovy C (ul. Karola Śliwky 50). Zde naleznete všechny aktuálně vyvěšené dokumenty.</p>
-    </div>
-  </div>
-
-  <div class="container">
-    <div class="page-layout">
-      <aside class="sidebar-nav">
-        <p class="sidebar-nav__title">Magistrát</p>
-        <ul class="sidebar-nav__list">
-          <li><a href="magistrat.html">Přehled</a></li>
-          <li><a href="uredni-deska.html" class="is-active">Úřední deska</a></li>
-          <li><a href="https://www.karvina.cz/magistrat/online-sluzby">Online služby</a></li>
-          <li><a href="https://www.karvina.cz/magistrat/potrebuji-si-vyridit">Potřebuji vyřídit</a></li>
-        </ul>
-      </aside>
-
-      <div>
-        <form class="filter-bar" action="https://www.karvina.cz/magistrat/uredni-deska" method="get">
-          <div style="flex:1;min-width:200px">
-            <label class="label" for="doc-type">Typ dokumentů</label>
-            <select id="doc-type" name="category" class="select">
-              <option value="">Všechny typy</option>
-              <option>Doručení veřejnou vyhláškou</option>
-              <option>Dotace – Programy</option>
-              <option>Dotace – Smlouvy</option>
-              <option>Informační povinnost</option>
-              <option>Nově vyhlášené předpisy města</option>
-              <option>Rozhodnutí a opatření magistrátu</option>
-              <option>Rozpočet a závěrečný účet</option>
-              <option>Volby</option>
-              <option>Ztráty a nálezy</option>
-              <option>Záměry</option>
-            </select>
-          </div>
-          <div style="align-self:flex-end">
-            <button type="submit" class="btn btn--primary">Filtrovat</button>
-          </div>
-        </form>
-
-        <h2>Seznam dokumentů</h2>
-        <ul class="doc-list">
-          <li class="doc-list__item">
-            <a href="https://www.karvina.cz/magistrat/uredni-deska">Jednotné environmentální stanovisko – Stavební úpravy a přístavba bytového domu Kosmonautů 630/60</a>
-            <p class="doc-list__meta">Informační povinnost</p>
-          </li>
-          <li class="doc-list__item">
-            <a href="https://www.karvina.cz/magistrat/uredni-deska">Informace o počtu a sídlech volebních okrsků</a>
-            <p class="doc-list__meta">Volby</p>
-          </li>
-          <li class="doc-list__item">
-            <a href="https://www.karvina.cz/magistrat/uredni-deska">Veřejná vyhláška – Opatření obecné povahy – Přechodná úprava provozu I/67</a>
-            <p class="doc-list__meta">Rozhodnutí a opatření magistrátu</p>
-          </li>
-          <li class="doc-list__item">
-            <a href="https://www.karvina.cz/magistrat/uredni-deska">Revitalizace veřejného prostranství kpt. Jaroše Karviná-Mizerov</a>
-            <p class="doc-list__meta">Záměry</p>
-          </li>
-          <li class="doc-list__item">
-            <a href="https://www.karvina.cz/magistrat/uredni-deska">Záměr prodat pozemky za účelem výstavby rodinných domů v Lokalitě RD nad Vagónkou</a>
-            <p class="doc-list__meta">Záměry</p>
-          </li>
-          <li class="doc-list__item">
-            <a href="https://www.karvina.cz/magistrat/uredni-deska">Dotační program: Kreativní business – podpora iniciativ mládeže 2026</a>
-            <p class="doc-list__meta">Dotace – Programy</p>
-          </li>
-          <li class="doc-list__item">
-            <a href="https://www.karvina.cz/magistrat/uredni-deska">Dotační program: Voucher pro začínající podnikatele v Karviné VII</a>
-            <p class="doc-list__meta">Dotace – Programy</p>
-          </li>
-        </ul>
-
-        <p style="text-align:center;margin-top:var(--space-xl)">
-          <a href="https://www.karvina.cz/magistrat/uredni-deska" class="btn btn--secondary">Zobrazit všechny dokumenty na karvina.cz</a>
-        </p>
-      </div>
-    </div>
-  </div>
-
-  <footer class="site-footer">
-    <div class="site-footer__bottom" style="border:none"><span>© Statutární město Karviná</span><a href="index.html">Úvod</a></div>
-  </footer>
-
-  <div class="prototype-badge">Návrh redesignu – prototyp</div>
+  </main>
+  <div id="site-footer"></div>
+  <script src="js/site-shell.js"></script>
   <script src="js/main.js"></script>
 </body>
 </html>

@@ -3,151 +3,44 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <meta name="description" content="Magistrát města Karviná – online služby, úřední deska, podatelna">
   <title>Magistrát města Karviná</title>
   <link rel="preconnect" href="https://fonts.googleapis.com">
-  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet">
   <link rel="stylesheet" href="css/design-system.css">
   <link rel="stylesheet" href="css/main.css">
 </head>
-<body>
-
-  <header class="site-header" role="banner">
-    <div class="site-header__top">
-      <div class="site-header__top-inner">
-        <a href="https://www.karvina.cz/user.php">Přihlášení</a>
-        <a href="https://www.karvina.cz/kontakty">Kontakty</a>
+<body data-active-nav="magistrat.html" data-sidebar="magistrat" data-sidebar-active="magistrat.html">
+  <div id="site-header"></div>
+  <main>
+    <div class="page-hero">
+      <div class="container">
+        <ol class="breadcrumb"><li><a href="index.html">Domů</a></li><li class="breadcrumb__sep">/</li><li aria-current="page">Magistrát</li></ol>
+        <h1>Magistrát města Karviná</h1>
+        <p class="page-hero__desc">Online služby, úřední deska, podatelna a vše pro vyřízení záležitostí na magistrátu.</p>
       </div>
     </div>
-    <div class="site-header__main">
-      <a href="index.html" class="site-header__logo"><img src="assets/logo.png" alt="Karviná" width="200" height="134"></a>
-      <nav class="site-header__nav" aria-label="Hlavní navigace">
-        <div class="nav-item"><button type="button">Město Karviná <svg class="nav-item__chevron" fill="none" stroke="currentColor" stroke-width="2" viewBox="0 0 24 24"><path d="M6 9l6 6 6-6"/></svg></button>
-          <ul class="mega-menu"><li><a href="https://www.karvina.cz/mesto-karvina/informace-o-meste">Informace o městě</a></li></ul>
-        </div>
-        <div class="nav-item"><button type="button">Magistrát <svg class="nav-item__chevron" fill="none" stroke="currentColor" stroke-width="2" viewBox="0 0 24 24"><path d="M6 9l6 6 6-6"/></svg></button>
-          <ul class="mega-menu">
-            <li><a href="magistrat.html">Přehled magistrátu</a></li>
-            <li><a href="uredni-deska.html">Úřední deska</a></li>
-            <li><a href="https://www.karvina.cz/magistrat/online-sluzby">Online služby</a></li>
-          </ul>
-        </div>
-        <div class="nav-item"><button type="button">Děje se <svg class="nav-item__chevron" fill="none" stroke="currentColor" stroke-width="2" viewBox="0 0 24 24"><path d="M6 9l6 6 6-6"/></svg></button>
-          <ul class="mega-menu"><li><a href="https://www.karvina.cz/deje-se">Novinky</a></li></ul>
-        </div>
-      </nav>
-      <div class="site-header__actions">
-        <form class="search-form" action="https://www.karvina.cz/search.php" method="get" role="search">
-          <svg class="search-form__icon" fill="none" stroke="currentColor" stroke-width="2" viewBox="0 0 24 24"><circle cx="11" cy="11" r="8"/><path d="M21 21l-4.35-4.35"/></svg>
-          <input type="search" name="query" class="search-form__input" placeholder="Hledat…">
-          <input type="hidden" name="action" value="results">
-        </form>
-        <button class="menu-toggle" aria-label="Menu" type="button"><svg fill="none" stroke="currentColor" stroke-width="2" viewBox="0 0 24 24"><path d="M3 12h18M3 6h18M3 18h18"/></svg></button>
-      </div>
-    </div>
-  </header>
-
-  <div class="mobile-nav"><div class="mobile-nav__panel">
-    <button class="mobile-nav__close" type="button"><svg width="24" height="24" fill="none" stroke="currentColor" stroke-width="2" viewBox="0 0 24 24"><path d="M18 6L6 18M6 6l12 12"/></svg></button>
-    <ul class="mobile-nav__list"><li><a href="index.html">Domů</a></li><li><a href="magistrat.html">Magistrát</a></li><li><a href="uredni-deska.html">Úřední deska</a></li></ul>
-  </div></div>
-
-  <div class="page-hero">
     <div class="container">
-      <nav aria-label="Drobečková navigace">
-        <ol class="breadcrumb">
-          <li><a href="index.html">Domů</a></li>
-          <li class="breadcrumb__sep">/</li>
-          <li aria-current="page">Magistrát</li>
-        </ol>
-      </nav>
-      <h1>Magistrát města Karviná</h1>
-      <p class="page-hero__desc">Online služby, úřední deska, podatelna a vše potřebné pro vyřízení vašich záležitostí na magistrátu.</p>
-    </div>
-  </div>
-
-  <div class="container">
-    <div class="page-layout">
-      <aside class="sidebar-nav" aria-label="Navigace sekce Magistrát">
-        <p class="sidebar-nav__title">Magistrát</p>
-        <ul class="sidebar-nav__list">
-          <li><a href="magistrat.html" class="is-active">Přehled</a></li>
-          <li><a href="https://www.karvina.cz/magistrat/online-sluzby">Online služby</a></li>
-          <li><a href="uredni-deska.html">Úřední deska</a></li>
-          <li><a href="https://www.karvina.cz/magistrat/potrebuji-si-vyridit">Potřebuji vyřídit</a></li>
-          <li><a href="https://www.karvina.cz/magistrat/odbory-magistratu">Členění magistrátu</a></li>
-          <li><a href="https://www.karvina.cz/magistrat/e-podatelna">Podatelna</a></li>
-          <li><a href="https://www.karvina.cz/magistrat/czechpoint">CzechPOINT</a></li>
-          <li><a href="https://www.karvina.cz/magistrat/samosprava">Samospráva</a></li>
-          <li><a href="https://www.karvina.cz/magistrat/granty-a-dotace">Granty a dotace</a></li>
-          <li><a href="https://www.karvina.cz/magistrat/pracovni-mista">Kariéra</a></li>
-        </ul>
-      </aside>
-
-      <div>
-        <div class="quick-services__grid" style="margin-top:0">
-          <a href="uredni-deska.html" class="service-card" style="box-shadow:var(--shadow-sm)">
-            <div class="service-card__icon"><svg fill="none" stroke="currentColor" stroke-width="2" viewBox="0 0 24 24"><path d="M14 2H6a2 2 0 0 0-2 2v16a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2V8z"/></svg></div>
-            <h3>Úřední deska</h3>
-            <p>Aktuálně vyvěšené dokumenty. Fyzicky u vchodů budov B a C.</p>
-            <span class="service-card__link">Zobrazit desku →</span>
-          </a>
-          <a href="https://www.karvina.cz/magistrat/online-sluzby" class="service-card" style="box-shadow:var(--shadow-sm)">
-            <div class="service-card__icon"><svg fill="none" stroke="currentColor" stroke-width="2" viewBox="0 0 24 24"><rect x="2" y="5" width="20" height="14" rx="2"/></svg></div>
-            <h3>Portál občana</h3>
-            <p>Poplatky, formuláře a žádosti o dotace online.</p>
-            <span class="service-card__link">Otevřít portál →</span>
-          </a>
-          <a href="https://www.karvina.cz/magistrat/rezervacni-system-objednejte-se-online-1" class="service-card" style="box-shadow:var(--shadow-sm)">
-            <div class="service-card__icon"><svg fill="none" stroke="currentColor" stroke-width="2" viewBox="0 0 24 24"><rect x="3" y="4" width="18" height="18" rx="2"/></svg></div>
-            <h3>Online rezervace</h3>
-            <p>Objednejte se na vyřízení záležitostí na magistrátu.</p>
-            <span class="service-card__link">Rezervovat →</span>
-          </a>
-        </div>
-
-        <div class="cta-banner">
-          <div>
-            <h3>Potřebujete něco vyřídit?</h3>
-            <p>Přehledný průvodce nejčastějšími úředními záležitostmi na jednom místě.</p>
+      <div class="page-layout">
+        <div id="site-sidebar"></div>
+        <div>
+          <div class="quick-services__grid" style="margin-top:0">
+            <a href="uredni-deska.html" class="service-card" style="box-shadow:var(--shadow-sm)"><div class="service-card__icon"><svg fill="none" stroke="currentColor" stroke-width="2" viewBox="0 0 24 24"><path d="M14 2H6a2 2 0 0 0-2 2v16a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2V8z"/></svg></div><h3>Úřední deska</h3><p>Aktuálně vyvěšené dokumenty.</p><span class="service-card__link">Zobrazit →</span></a>
+            <a href="online-sluzby.html" class="service-card" style="box-shadow:var(--shadow-sm)"><div class="service-card__icon"><svg fill="none" stroke="currentColor" stroke-width="2" viewBox="0 0 24 24"><rect x="2" y="5" width="20" height="14" rx="2"/></svg></div><h3>Portál občana</h3><p>Formuláře a platby online.</p><span class="service-card__link">Portál →</span></a>
+            <a href="https://www.karvina.cz/magistrat/rezervacni-system-objednejte-se-online-1" class="service-card" style="box-shadow:var(--shadow-sm)"><div class="service-card__icon"><svg fill="none" stroke="currentColor" stroke-width="2" viewBox="0 0 24 24"><rect x="3" y="4" width="18" height="18" rx="2"/></svg></div><h3>Online rezervace</h3><p>Objednání na magistrát.</p><span class="service-card__link">Rezervovat →</span></a>
           </div>
-          <a href="https://www.karvina.cz/magistrat/potrebuji-si-vyridit" class="btn btn--secondary">Potřebuji vyřídit</a>
-        </div>
-
-        <h2>Členění magistrátu</h2>
-        <p style="color:var(--color-text-secondary);margin-bottom:var(--space-xl)">Magistrát města Karviná je organizován do odborů, které zajišťují jednotlivé agendy městské správy.</p>
-
-        <div class="grid grid--2">
-          <div class="card"><div class="card__body">
-            <h3 class="card__title"><a href="https://www.karvina.cz/magistrat/odbory-magistratu">Odbory magistrátu</a></h3>
-            <p class="card__excerpt">Kompletní přehled odborů a jejich agend.</p>
-          </div></div>
-          <div class="card"><div class="card__body">
-            <h3 class="card__title"><a href="https://www.karvina.cz/magistrat/samosprava">Samospráva</a></h3>
-            <p class="card__excerpt">Zastupitelstvo, rada města a usnesení.</p>
-          </div></div>
-          <div class="card"><div class="card__body">
-            <h3 class="card__title"><a href="https://www.karvina.cz/magistrat/mapovy-portal-statutarniho-mesta-karvina">Mapový portál</a></h3>
-            <p class="card__excerpt">Interaktivní mapy a územní informace města.</p>
-          </div></div>
-          <div class="card"><div class="card__body">
-            <h3 class="card__title"><a href="https://www.karvina.cz/magistrat/krizove-situace">Krizové situace</a></h3>
-            <p class="card__excerpt">Důležité informace v mimořádných situacích.</p>
-          </div></div>
+          <div class="cta-banner"><div><h3>Potřebujete něco vyřídit?</h3><p>Průvodce úředními záležitostmi.</p></div><a href="potrebuji-vyridit.html" class="btn btn--secondary">Potřebuji vyřídit</a></div>
+          <div class="grid grid--2" style="margin-top:var(--space-xl)">
+            <a href="podstranka.html?sekce=magistrat&stranka=odbory" class="card" style="text-decoration:none;color:inherit"><div class="card__body"><h3 class="card__title">Členění magistrátu</h3></div></a>
+            <a href="podstranka.html?sekce=magistrat&stranka=samosprava" class="card" style="text-decoration:none;color:inherit"><div class="card__body"><h3 class="card__title">Samospráva</h3></div></a>
+            <a href="podstranka.html?sekce=magistrat&stranka=dotace" class="card" style="text-decoration:none;color:inherit"><div class="card__body"><h3 class="card__title">Granty a dotace</h3></div></a>
+            <a href="podstranka.html?sekce=magistrat&stranka=mapovy-portal" class="card" style="text-decoration:none;color:inherit"><div class="card__body"><h3 class="card__title">Mapový portál</h3></div></a>
+          </div>
         </div>
       </div>
     </div>
-  </div>
-
-  <footer class="site-footer">
-    <div class="site-footer__bottom" style="border:none;max-width:var(--container-max)">
-      <span>© Statutární město Karviná</span>
-      <a href="index.html">Zpět na úvod</a>
-    </div>
-  </footer>
-
-  <div class="prototype-badge">Návrh redesignu – prototyp</div>
+  </main>
+  <div id="site-footer"></div>
+  <script src="js/site-shell.js"></script>
   <script src="js/main.js"></script>
 </body>
 </html>

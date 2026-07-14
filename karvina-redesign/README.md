@@ -1,52 +1,43 @@
-# Karviná.cz – návrh redesignu (prototyp)
+# Karviná.cz – redesign celého webu (prototyp)
 
-Vizuální redesign oficiálních stránek [karvina.cz](https://www.karvina.cz/) založený výhradně na veřejně dostupném obsahu. **Logo města je zachováno.** Funkce, URL a backend (Marwel CMS) zůstávají beze změny – jde pouze o novou vizuální vrstvu.
+Vizuální redesign **celého webu** [karvina.cz](https://www.karvina.cz/) – nejen homepage. Logo zachováno, funkce a backend beze změny.
 
-## Prohlížení prototypu
+## Jak otevřít
 
-Otevřete `index.html` v prohlížeči, nebo spusťte lokální server:
+1. Stáhněte ZIP: https://github.com/TomasDurczok/html-portfolio/archive/refs/heads/cursor/karvina-redesign-cab4.zip
+2. Rozbalte a otevřete **`OTEVRIT-KARVINA-REDESIGN.html`** (v kořeni) nebo `karvina-redesign/index.html`
+3. V menu klikněte **Mapa webu** – uvidíte všechny sekce
 
-```bash
-cd karvina-redesign
-python3 -m http.server 8080
-# → http://localhost:8080
-```
+## Struktura redesignu
 
-## Stránky v prototypu
+| Šablona | Soubory | Pokrývá |
+|---------|---------|---------|
+| Homepage | `index.html` | Úvodní stránka |
+| Sekční landing | `mesto-karvina.html`, `magistrat.html`, `deje-se.html`… | Hlavní sekce webu |
+| Podstránka | `podstranka.html?sekce=…&stranka=…` | **Všechny vnořené stránky** (30+ variant) |
+| Seznam | `uredni-deska.html`, `deje-se.html` | Úřední deska, novinky |
+| Článek | `clanek.html` | Novinky / aktuality |
+| Kontakty | `kontakty.html` | Kontaktní stránka |
+| Mapa webu | `mapa-webu.html` | Přehled celého webu |
 
-| Soubor | Typ stránky | Odpovídá šabloně |
-|--------|-------------|------------------|
-| `index.html` | Homepage | Hlavní stránka |
-| `magistrat.html` | Sekční landing | Magistrát + rychlé služby |
-| `uredni-deska.html` | Seznam / filtr | Úřední deska |
-| `clanek.html` | Článek / novinka | Děje se |
+## Jak to funguje na živém webu
 
-## Design systém
+Na karvina.cz jsou **tisíce stránek**, ale v Marwel CMS stačí upravit **5–6 šablon** – všechny stránky automaticky dostanou nový design:
 
-- **Barvy:** zachována modrá paleta webu (`#4c589f`, `#185b96`, `#0e3c66`)
-- **Typografie:** Inter (nahrazuje Roboto Condensed)
-- **Styl:** minimalistický, vzdušný, responzivní (mobile-first)
-- **Komponenty:** karty služeb, hero slider, záložky novinek, boční navigace, seznam dokumentů
+- `layout` (header + footer) → `js/site-shell.js` + CSS
+- homepage šablona
+- sekční landing
+- podstránka s bočním menu
+- seznam (úřední deska, novinky)
+- článek
 
-## Implementace do produkce (Marwel CMS)
+## Sdílené soubory
 
-Redesign se nasadí úpravou tématu `themes/karvina/`:
+- `css/design-system.css` – barvy, fonty, komponenty
+- `css/main.css` – layout, header, footer, karty
+- `js/site-shell.js` – menu, patička, navigace (stejné všude)
+- `js/main.js` – slider, záložky, mobilní menu
 
-1. `css/design-system.css` + `css/main.css` → nahradí/rozšíří stávající `main.css`, `responsive.css`
-2. HTML struktura šablon → přizpůsobit novým komponentám (header, footer, karty)
-3. Logo → beze změny (`/data/system/config/logo.PNG`)
-4. Obrázky a odkazy → zůstávají z CMS
-5. JavaScript → pouze UI (menu, slider, záložky); stávající integrace (chatbot, analytics) beze změny
+## Logo
 
-## Co redesign řeší / neřeší
-
-| Ano | Ne |
-|-----|-----|
-| Moderní vzhled a UX | Migrace PHP / CMS |
-| Lepší mobilní zobrazení | Změna URL nebo funkcí |
-| Čitelnější navigace | Bezpečnostní upgrade backendu |
-| Přístupnější kontrast a focus stavy | Nové integrace |
-
----
-
-*Návrh redesignu – červenec 2026*
+`assets/logo.png` – originál z karvina.cz, beze změny.

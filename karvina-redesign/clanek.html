@@ -3,108 +3,39 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <meta name="description" content="Aktuální přehled největších investičních akcí na území města Karviná v realizaci.">
   <title>Stavíme pro Vás! | Karviná</title>
   <link rel="preconnect" href="https://fonts.googleapis.com">
-  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet">
   <link rel="stylesheet" href="css/design-system.css">
   <link rel="stylesheet" href="css/main.css">
 </head>
-<body>
-
-  <header class="site-header" role="banner">
-    <div class="site-header__top"><div class="site-header__top-inner">
-      <a href="https://www.karvina.cz/user.php">Přihlášení</a>
-      <a href="https://www.karvina.cz/kontakty">Kontakty</a>
-    </div></div>
-    <div class="site-header__main">
-      <a href="index.html" class="site-header__logo"><img src="assets/logo.png" alt="Karviná" width="200" height="134"></a>
-      <nav class="site-header__nav" aria-label="Hlavní navigace">
-        <div class="nav-item"><button type="button">Děje se <svg class="nav-item__chevron" fill="none" stroke="currentColor" stroke-width="2" viewBox="0 0 24 24"><path d="M6 9l6 6 6-6"/></svg></button>
-          <ul class="mega-menu"><li><a href="https://www.karvina.cz/deje-se">Všechny novinky</a></li></ul>
-        </div>
-      </nav>
-      <div class="site-header__actions">
-        <button class="menu-toggle" aria-label="Menu" type="button"><svg fill="none" stroke="currentColor" stroke-width="2" viewBox="0 0 24 24"><path d="M3 12h18M3 6h18M3 18h18"/></svg></button>
-      </div>
-    </div>
-  </header>
-
-  <div class="mobile-nav"><div class="mobile-nav__panel">
-    <button class="mobile-nav__close" type="button"><svg width="24" height="24" fill="none" stroke="currentColor" stroke-width="2" viewBox="0 0 24 24"><path d="M18 6L6 18M6 6l12 12"/></svg></button>
-    <ul class="mobile-nav__list"><li><a href="index.html">Domů</a></li></ul>
-  </div></div>
-
-  <article>
+<body data-active-nav="deje-se.html">
+  <div id="site-header"></div>
+  <main>
     <div class="page-hero">
       <div class="container container--narrow">
-        <nav aria-label="Drobečková navigace">
-          <ol class="breadcrumb">
-            <li><a href="index.html">Domů</a></li>
-            <li class="breadcrumb__sep">/</li>
-            <li><a href="https://www.karvina.cz/deje-se">Děje se</a></li>
-            <li class="breadcrumb__sep">/</li>
-            <li aria-current="page">Stavíme pro Vás!</li>
-          </ol>
-        </nav>
+        <ol class="breadcrumb"><li><a href="index.html">Domů</a></li><li class="breadcrumb__sep">/</li><li><a href="deje-se.html">Děje se</a></li><li class="breadcrumb__sep">/</li><li aria-current="page">Stavíme pro Vás!</li></ol>
         <span class="badge">Právě se děje</span>
         <h1>Stavíme pro Vás!</h1>
-        <div class="article-meta">
-          <time datetime="2026-07-14">14. července 2026</time>
-          <span>Sekce: Investice</span>
-        </div>
+        <div class="article-meta"><time datetime="2026-07-14">14. července 2026</time><span>Investice</span></div>
       </div>
     </div>
-
     <div class="container container--narrow" style="padding-bottom:var(--space-4xl)">
-      <img src="https://www.karvina.cz/uploads/gallery/detail/5947.jpg" alt="Investiční akce ve městě Karviná" style="width:100%;border-radius:var(--radius-lg);margin-bottom:var(--space-2xl)" loading="lazy">
-
+      <img src="https://www.karvina.cz/uploads/gallery/detail/5947.jpg" alt="" style="width:100%;border-radius:var(--radius-lg);margin-bottom:var(--space-2xl)">
       <div class="prose">
-        <p>Aktuální přehled největších investičních akcí na území města v realizaci. Město Karviná pokračuje v rozsáhlých projektech, které zlepšují kvalitu života občanů – od rekonstrukce veřejných prostranství přes modernizaci zdravotnických zařízení až po výstavbu nové infrastruktury.</p>
-
-        <h2>Přehled probíhajících investic</h2>
-        <ul>
-          <li>Modernizace budovy polikliniky v Karviné-Mizerově</li>
-          <li>Výstavba druhého parkoviště u Karvinského moře</li>
-          <li>Revitalizace veřejných prostranství v jednotlivých částech města</li>
-          <li>Výstavba technické infrastruktury a nových kapacit pro vzdělávání</li>
-        </ul>
-
-        <p>Podrobné informace o jednotlivých projektech, harmonogramu a průběhu realizace naleznete na oficiálních stránkách města. Sledujte sekci „Děje se" pro pravidelné aktualizace.</p>
+        <p>Aktuální přehled největších investičních akcí na území města v realizaci.</p>
+        <h2>Probíhající investice</h2>
+        <ul><li>Modernizace polikliniky v Karviné-Mizerově</li><li>Parkoviště u Karvinského moře</li><li>Revitalizace veřejných prostranství</li></ul>
       </div>
-
-      <div class="cta-banner" style="margin-top:var(--space-3xl)">
-        <div>
-          <h3>Máte dotaz k investici?</h3>
-          <p>Kontaktujte příslušný odbor magistrátu města Karviná.</p>
-        </div>
-        <a href="https://www.karvina.cz/kontakty" class="btn btn--secondary">Kontakty</a>
-      </div>
-
       <h2 style="margin-top:var(--space-3xl)">Další novinky</h2>
       <div class="grid grid--2" style="margin-top:var(--space-lg)">
-        <article class="card">
-          <div class="card__body">
-            <time class="card__meta" datetime="2026-07-14">14. 07. 2026</time>
-            <h3 class="card__title"><a href="https://www.karvina.cz/deje-se/u-karvinskeho-more-zacala-vystavba-druheho-parkoviste">U Karvinského moře začala výstavba druhého parkoviště</a></h3>
-          </div>
-        </article>
-        <article class="card">
-          <div class="card__body">
-            <time class="card__meta" datetime="2026-07-09">9. 07. 2026</time>
-            <h3 class="card__title"><a href="https://www.karvina.cz/deje-se/na-poliklinice-pribudou-nove-ambulance-i-dalsi-lekari">Na poliklinice přibudou nové ambulance</a></h3>
-          </div>
-        </article>
+        <article class="card"><div class="card__body"><time class="card__meta">14. 07. 2026</time><h3 class="card__title"><a href="clanek.html">Parkoviště u Karvinského moře</a></h3></div></article>
+        <article class="card"><div class="card__body"><time class="card__meta">9. 07. 2026</time><h3 class="card__title"><a href="deje-se.html">Nové ambulance na poliklinice</a></h3></div></article>
       </div>
     </div>
-  </article>
-
-  <footer class="site-footer">
-    <div class="site-footer__bottom" style="border:none"><span>© Statutární město Karviná</span><a href="index.html">Úvod</a></div>
-  </footer>
-
-  <div class="prototype-badge">Návrh redesignu – prototyp</div>
+  </main>
+  <div id="site-footer"></div>
+  <script src="js/site-shell.js"></script>
   <script src="js/main.js"></script>
 </body>
 </html>

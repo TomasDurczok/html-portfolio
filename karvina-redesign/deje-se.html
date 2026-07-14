@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="cs">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Děje se | Karviná</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="css/design-system.css">
+  <link rel="stylesheet" href="css/main.css">
+</head>
+<body data-active-nav="deje-se.html" data-sidebar="deje-se" data-sidebar-active="deje-se.html">
+  <div id="site-header"></div>
+  <main>
+    <div class="page-hero">
+      <div class="container">
+        <ol class="breadcrumb"><li><a href="index.html">Domů</a></li><li class="breadcrumb__sep">/</li><li aria-current="page">Děje se</li></ol>
+        <h1>Co se děje v Karviné</h1>
+        <p class="page-hero__desc">Aktuální zprávy, investice, kultura a dění ve městě.</p>
+      </div>
+    </div>
+    <div class="container" style="padding-bottom:var(--space-4xl)">
+      <div class="page-layout">
+        <div id="site-sidebar"></div>
+        <div>
+          <div class="news-tabs">
+            <button class="news-tabs__btn is-active" type="button">Právě se děje</button>
+            <button class="news-tabs__btn" type="button">Aktuálně</button>
+          </div>
+          <div class="news-panel is-active">
+            <div class="grid grid--2">
+              <article class="card"><img class="card__image" src="https://www.karvina.cz/uploads/gallery/detail/5947.jpg" alt=""><div class="card__body"><time class="card__meta">14. 07. 2026</time><h3 class="card__title"><a href="clanek.html">Stavíme pro Vás!</a></h3></div></article>
+              <article class="card"><div class="card__body" style="padding-top:var(--space-xl)"><time class="card__meta">8. 07. 2026</time><h3 class="card__title"><a href="podstranka.html?sekce=mesto&stranka=doprava">Dopravní omezení</a></h3></div></article>
+              <article class="card"><div class="card__body" style="padding-top:var(--space-xl)"><time class="card__meta">8. 07. 2026</time><h3 class="card__title"><a href="podstranka.html?sekce=mesto&stranka=podnikani">Pozemky RD nad Vagónkou</a></h3></div></article>
+            </div>
+          </div>
+          <div class="news-panel">
+            <div class="grid grid--2">
+              <article class="card"><img class="card__image" src="https://www.karvina.cz/uploads/gallery/detail/5948.jpg" alt=""><div class="card__body"><time class="card__meta">14. 07. 2026</time><h3 class="card__title"><a href="clanek.html">Parkoviště u Karvinského moře</a></h3></div></article>
+              <article class="card"><img class="card__image" src="https://www.karvina.cz/uploads/gallery/detail/5946.jpg" alt=""><div class="card__body"><time class="card__meta">13. 07. 2026</time><h3 class="card__title"><a href="clanek.html">Dětská knižní série</a></h3></div></article>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </main>
+  <div id="site-footer"></div>
+  <script src="js/site-shell.js"></script>
+  <script src="js/main.js"></script>
+</body>
+</html>
