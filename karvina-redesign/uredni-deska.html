@@ -23,11 +23,20 @@
       <div class="page-layout">
         <div id="site-sidebar"></div>
         <div>
-          <form class="filter-bar">
-            <div style="flex:1;min-width:200px"><label class="label" for="doc-type">Typ dokumentů</label>
-              <select id="doc-type" class="select"><option>Všechny typy</option><option>Rozhodnutí magistrátu</option><option>Volby</option><option>Záměry</option><option>Dotace</option></select>
+          <form class="disclosure" data-disclosure>
+            <button type="button" class="disclosure__toggle" aria-expanded="false">
+              Filtrovat dokumenty
+              <svg class="disclosure__icon" width="16" height="16" fill="none" stroke="currentColor" stroke-width="2" viewBox="0 0 24 24"><path d="M6 9l6 6 6-6"/></svg>
+            </button>
+            <div class="disclosure__panel">
+              <div class="filter-bar" style="border:none;padding:0;margin:0;background:transparent">
+                <div style="flex:1;min-width:200px">
+                  <label class="label" for="doc-type">Typ dokumentů</label>
+                  <select id="doc-type" class="select"><option>Všechny typy</option><option>Rozhodnutí magistrátu</option><option>Volby</option><option>Záměry</option><option>Dotace</option></select>
+                </div>
+                <div style="align-self:flex-end"><button type="button" class="btn btn--primary">Filtrovat</button></div>
+              </div>
             </div>
-            <div style="align-self:flex-end"><button type="button" class="btn btn--primary">Filtrovat</button></div>
           </form>
           <ul class="doc-list">
             <li class="doc-list__item"><a href="podstranka.html?sekce=magistrat&stranka=uredni-deska">Jednotné environmentální stanovisko – Kosmonautů 630/60</a><p class="doc-list__meta">Informační povinnost</p></li>

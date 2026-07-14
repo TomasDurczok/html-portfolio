@@ -94,7 +94,16 @@
     });
   });
 
-  // Skeleton demo – remove after simulated load
+  // Progressive disclosure
+  document.querySelectorAll('[data-disclosure]').forEach((el) => {
+    const toggle = el.querySelector('.disclosure__toggle');
+    toggle?.addEventListener('click', () => {
+      const open = el.classList.toggle('is-open');
+      toggle.setAttribute('aria-expanded', open ? 'true' : 'false');
+    });
+  });
+
+  // Skeleton demo
   const skeletonBlocks = document.querySelectorAll('[data-skeleton]');
   if (skeletonBlocks.length) {
     setTimeout(() => {

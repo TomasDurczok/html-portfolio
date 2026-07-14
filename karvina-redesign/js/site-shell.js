@@ -266,7 +266,7 @@
       </div>
       <div class="site-footer__bottom">
         <span>© 2016–2026 Statutární město Karviná</span>
-        <span>Návrh redesignu – vizuální prototyp celého webu</span>
+        <span>Dark-first redesign – prototyp</span>
       </div>
     </footer>
     <div class="prototype-badge">Redesign celého webu – prototyp</div>`;
