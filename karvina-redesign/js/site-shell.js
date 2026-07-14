@@ -269,7 +269,7 @@
         <span>Dark-first redesign – prototyp</span>
       </div>
     </footer>
-    <div class="prototype-badge">Redesign celého webu – prototyp</div>`;
+    <div class="prototype-badge">v3 · DARK REDESIGN · ${new Date().getFullYear()}</div>`;
   }
 
   function renderSidebar(sectionKey, activeHref) {
