@@ -190,24 +190,17 @@
   function renderHeader(activeSection) {
     return `
     <header class="site-header" role="banner">
-      <div class="site-header__top">
-        <div class="site-header__top-inner">
-          <a href="https://www.karvina.cz/user.php">Přihlášení</a>
-          <a href="kontakty.html">Kontakty</a>
-          <a href="mapa-webu.html">Mapa webu</a>
-          <a href="https://www.karvina.cz/rss/cs">RSS</a>
-        </div>
-      </div>
       <div class="site-header__main">
         <a href="index.html" class="site-header__logo" aria-label="Karviná – domů">
           <img src="assets/logo.png" alt="Statutární město Karviná" width="200" height="134">
         </a>
         <nav class="site-header__nav" aria-label="Hlavní navigace">${renderNav(activeSection)}</nav>
         <div class="site-header__actions">
+          <a href="kontakty.html" class="btn btn--ghost btn--sm" style="font-size:0.75rem">Kontakty</a>
           <form class="search-form" action="https://www.karvina.cz/search.php" method="get" role="search">
             <svg class="search-form__icon" fill="none" stroke="currentColor" stroke-width="2" viewBox="0 0 24 24"><circle cx="11" cy="11" r="8"/><path d="M21 21l-4.35-4.35"/></svg>
             <label for="search-input" class="sr-only">Vyhledávání</label>
-            <input type="search" id="search-input" name="query" class="search-form__input" placeholder="Hledat na webu…">
+            <input type="search" id="search-input" name="query" class="search-form__input" placeholder="Hledat…" autocomplete="off">
             <input type="hidden" name="action" value="results">
           </form>
           <button class="menu-toggle" aria-label="Otevřít menu" type="button">
@@ -266,10 +259,10 @@
       </div>
       <div class="site-footer__bottom">
         <span>© 2016–2026 Statutární město Karviná</span>
-        <span>Dark-first redesign – prototyp</span>
+        <span>Copyright © Statutární město Karviná · Návrh redesignu ve stylu Apple</span>
       </div>
     </footer>
-    <div class="prototype-badge">v3 · DARK REDESIGN · ${new Date().getFullYear()}</div>`;
+    <div class="prototype-badge">Apple style · v4</div>`;
   }
 
   function renderSidebar(sectionKey, activeHref) {
