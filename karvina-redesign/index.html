@@ -1,0 +1,372 @@
+<!DOCTYPE html>
+<html lang="cs">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="Oficiální stránky statutárního města Karviné a Městské policie Karviná">
+  <title>Oficiální stránky statutárního města Karviná</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="css/design-system.css">
+  <link rel="stylesheet" href="css/main.css">
+  <link rel="icon" href="https://www.karvina.cz/themes/karvina/favicon.ico">
+</head>
+<body>
+
+  <header class="site-header" role="banner">
+    <div class="site-header__top">
+      <div class="site-header__top-inner">
+        <a href="https://www.karvina.cz/user.php">
+          <svg width="16" height="16" fill="none" stroke="currentColor" stroke-width="2" viewBox="0 0 24 24"><path d="M20 21v-2a4 4 0 0 0-4-4H8a4 4 0 0 0-4 4v2"/><circle cx="12" cy="7" r="4"/></svg>
+          Přihlášení
+        </a>
+        <a href="https://www.karvina.cz/kontakty">Kontakty</a>
+        <a href="https://www.karvina.cz/rss/cs">RSS</a>
+      </div>
+    </div>
+    <div class="site-header__main">
+      <a href="index.html" class="site-header__logo" aria-label="Karviná – domů">
+        <img src="assets/logo.png" alt="Statutární město Karviná" width="200" height="134">
+      </a>
+
+      <nav class="site-header__nav" aria-label="Hlavní navigace">
+        <div class="nav-item">
+          <button type="button">Město Karviná <svg class="nav-item__chevron" fill="none" stroke="currentColor" stroke-width="2" viewBox="0 0 24 24"><path d="M6 9l6 6 6-6"/></svg></button>
+          <ul class="mega-menu">
+            <li><a href="https://www.karvina.cz/mesto-karvina/informace-o-meste">Informace o městě</a></li>
+            <li><a href="https://www.karvina.cz/magistrat/vedeni-mesta">Vedení města</a></li>
+            <li><a href="https://www.karvina.cz/mesto-karvina/podnikani-a-investovani">Podnikání a investování</a></li>
+            <li><a href="https://www.karvina.cz/mesto-karvina/pro-media">Informace pro média</a></li>
+            <li><a href="https://www.karvina.cz/mesto-karvina/mapa-mesta">Mapy</a></li>
+            <li><a href="https://www.karvina.cz/mesto-karvina/dalsi-weby-mesta">Další weby města</a></li>
+          </ul>
+        </div>
+        <div class="nav-item">
+          <button type="button">Organizace města <svg class="nav-item__chevron" fill="none" stroke="currentColor" stroke-width="2" viewBox="0 0 24 24"><path d="M6 9l6 6 6-6"/></svg></button>
+          <ul class="mega-menu">
+            <li><a href="https://www.karvina.cz/organizace-mesta/aktuality">Aktuality a zprávy</a></li>
+            <li><a href="https://www.karvina.cz/organizace-mesta/seznam-organizaci">Seznam organizací</a></li>
+          </ul>
+        </div>
+        <div class="nav-item">
+          <button type="button">Magistrát <svg class="nav-item__chevron" fill="none" stroke="currentColor" stroke-width="2" viewBox="0 0 24 24"><path d="M6 9l6 6 6-6"/></svg></button>
+          <ul class="mega-menu">
+            <li><a href="magistrat.html">Přehled magistrátu</a></li>
+            <li><a href="https://www.karvina.cz/magistrat/online-sluzby">Online služby</a></li>
+            <li><a href="uredni-deska.html">Úřední deska</a></li>
+            <li><a href="https://www.karvina.cz/magistrat/potrebuji-si-vyridit">Potřebuji vyřídit</a></li>
+            <li><a href="https://www.karvina.cz/magistrat/e-podatelna">Podatelna</a></li>
+            <li><a href="https://www.karvina.cz/magistrat/czechpoint">CzechPOINT</a></li>
+          </ul>
+        </div>
+        <div class="nav-item">
+          <button type="button">Děje se <svg class="nav-item__chevron" fill="none" stroke="currentColor" stroke-width="2" viewBox="0 0 24 24"><path d="M6 9l6 6 6-6"/></svg></button>
+          <ul class="mega-menu">
+            <li><a href="https://www.karvina.cz/deje-se">Všechny novinky</a></li>
+            <li><a href="https://www.karvina.cz/deje-se/zastupitelstvo">Zastupitelstvo</a></li>
+            <li><a href="https://www.karvina.cz/deje-se/doprava">Doprava</a></li>
+            <li><a href="https://www.karvina.cz/deje-se/karvinsky-zpravodaj">Karvinský zpravodaj</a></li>
+          </ul>
+        </div>
+        <a href="https://www.karvina.cz/mestska-policie" class="nav-item" style="display:contents"><span style="display:flex;align-items:center;padding:0.625rem 0.875rem;font-weight:500;color:var(--color-text);text-decoration:none">Městská policie</span></a>
+      </nav>
+
+      <div class="site-header__actions">
+        <form class="search-form" action="https://www.karvina.cz/search.php" method="get" role="search">
+          <svg class="search-form__icon" fill="none" stroke="currentColor" stroke-width="2" viewBox="0 0 24 24"><circle cx="11" cy="11" r="8"/><path d="M21 21l-4.35-4.35"/></svg>
+          <label for="search-input" class="sr-only">Vyhledávání</label>
+          <input type="search" id="search-input" name="query" class="search-form__input" placeholder="Hledat na webu…" autocomplete="off">
+          <input type="hidden" name="action" value="results">
+        </form>
+        <button class="menu-toggle" aria-label="Otevřít menu" type="button">
+          <svg fill="none" stroke="currentColor" stroke-width="2" viewBox="0 0 24 24"><path d="M3 12h18M3 6h18M3 18h18"/></svg>
+        </button>
+      </div>
+    </div>
+  </header>
+
+  <!-- Mobile navigation -->
+  <div class="mobile-nav" aria-hidden="true">
+    <div class="mobile-nav__panel">
+      <button class="mobile-nav__close" aria-label="Zavřít menu" type="button">
+        <svg width="24" height="24" fill="none" stroke="currentColor" stroke-width="2" viewBox="0 0 24 24"><path d="M18 6L6 18M6 6l12 12"/></svg>
+      </button>
+      <form class="search-form" action="https://www.karvina.cz/search.php" method="get" style="margin-top:2rem">
+        <input type="search" name="query" class="input" placeholder="Hledat…" style="width:100%">
+        <input type="hidden" name="action" value="results">
+      </form>
+      <ul class="mobile-nav__list">
+        <li><a href="https://www.karvina.cz/mesto-karvina">Město Karviná</a></li>
+        <li><a href="https://www.karvina.cz/organizace-mesta">Organizace města</a></li>
+        <li><a href="magistrat.html">Magistrát</a></li>
+        <li><a href="https://www.karvina.cz/deje-se">Děje se</a></li>
+        <li><a href="https://www.karvina.cz/mestska-policie">Městská policie</a></li>
+      </ul>
+    </div>
+  </div>
+
+  <main>
+    <!-- Hero slider -->
+    <section class="hero" aria-label="Aktuální upozornění">
+      <div class="hero__slider">
+        <div class="hero__slide is-active">
+          <img src="https://www.karvina.cz/uploads/slider-ft-15-07-2026.jpg" alt="Farmářské trhy v Karviné" loading="eager">
+          <div class="hero__overlay">
+            <div class="hero__content">
+              <span class="badge">Akce</span>
+              <h2>Navštivte farmářské trhy</h2>
+              <p>Milovníci kvalitních regionálních potravin si v Karviné přijdou 15. července 2026 na své.</p>
+              <a href="https://www.karvina.cz/magistrat/odbory-magistratu/odbor-rozvoje/farmarske-trhy-v-karvine-2026" class="btn btn--primary">Více informací</a>
+            </div>
+          </div>
+        </div>
+        <div class="hero__slide">
+          <img src="https://www.karvina.cz/uploads/slider-carusel-munipolis-registrace.png" alt="Munipolis aplikace" loading="lazy">
+          <div class="hero__overlay">
+            <div class="hero__content">
+              <span class="badge">Aplikace</span>
+              <h2>Munipolis – už vám nic neuteče</h2>
+              <p>Všechny informace z města přímo do vašeho telefonu.</p>
+              <a href="https://www.karvina.cz/deje-se/karvina-vas-ted-informuje-moderne-pripojte-se-k-munipolis" class="btn btn--primary">Stáhnout aplikaci</a>
+            </div>
+          </div>
+        </div>
+        <div class="hero__slide">
+          <img src="https://www.karvina.cz/uploads/karusel-newsletter1.jpg" alt="Rozcestník webů města" loading="lazy">
+          <div class="hero__overlay">
+            <div class="hero__content">
+              <span class="badge">Odkazy</span>
+              <h2>Rozcestník dalších webů města</h2>
+              <p>Nenechte si ujít další zajímavé informace o Karviné.</p>
+              <a href="https://www.karvina.cz/mesto-karvina/dalsi-weby-mesta" class="btn btn--primary">Prozkoumat</a>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="hero__dots" role="tablist" aria-label="Výběr slidu">
+        <button class="hero__dot is-active" aria-label="Slid 1" type="button"></button>
+        <button class="hero__dot" aria-label="Slid 2" type="button"></button>
+        <button class="hero__dot" aria-label="Slid 3" type="button"></button>
+      </div>
+    </section>
+
+    <!-- Quick services -->
+    <section class="quick-services">
+      <div class="container">
+        <div class="quick-services__grid">
+          <a href="uredni-deska.html" class="service-card">
+            <div class="service-card__icon">
+              <svg fill="none" stroke="currentColor" stroke-width="2" viewBox="0 0 24 24"><path d="M14 2H6a2 2 0 0 0-2 2v16a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2V8z"/><path d="M14 2v6h6M16 13H8M16 17H8M10 9H8"/></svg>
+            </div>
+            <h3>Úřední deska</h3>
+            <p>Aktuálně vyvěšené dokumenty magistrátu. Fyzicky u vchodů budov B a C na ul. Karola Śliwky.</p>
+            <span class="service-card__link">Aktuální úřední deska →</span>
+          </a>
+          <a href="https://www.karvina.cz/magistrat/online-sluzby" class="service-card">
+            <div class="service-card__icon">
+              <svg fill="none" stroke="currentColor" stroke-width="2" viewBox="0 0 24 24"><rect x="2" y="5" width="20" height="14" rx="2"/><path d="M2 10h20"/></svg>
+            </div>
+            <h3>Portál občana</h3>
+            <p>Zaplaťte poplatky, vyplňte elektronické formuláře a žádosti o dotace na jednom místě.</p>
+            <span class="service-card__link">Přejít do portálu →</span>
+          </a>
+          <a href="https://www.karvina.cz/magistrat/rezervacni-system-objednejte-se-online-1" class="service-card">
+            <div class="service-card__icon">
+              <svg fill="none" stroke="currentColor" stroke-width="2" viewBox="0 0 24 24"><rect x="3" y="4" width="18" height="18" rx="2"/><path d="M16 2v4M8 2v4M3 10h18"/></svg>
+            </div>
+            <h3>Online rezervace</h3>
+            <p>Objednejte se online na vyřízení záležitostí na magistrátu. Propojeno s vyvolávacím systémem.</p>
+            <span class="service-card__link">Rezervovat termín →</span>
+          </a>
+        </div>
+      </div>
+    </section>
+
+    <!-- News -->
+    <section class="section">
+      <div class="container">
+        <div class="section__header">
+          <div>
+            <h2>Co se děje v Karviné</h2>
+            <p class="section__subtitle">Aktuální zprávy, investice a dopravní informace z města.</p>
+          </div>
+          <a href="https://www.karvina.cz/deje-se" class="btn btn--secondary btn--sm">Všechny novinky</a>
+        </div>
+
+        <div class="news-tabs" role="tablist">
+          <button class="news-tabs__btn is-active" type="button" role="tab">Právě se děje</button>
+          <button class="news-tabs__btn" type="button" role="tab">Aktuálně</button>
+        </div>
+
+        <div class="news-panel is-active">
+          <div class="grid grid--3">
+            <article class="card">
+              <img class="card__image" src="https://www.karvina.cz/uploads/gallery/detail/5947.jpg" alt="" loading="lazy">
+              <div class="card__body">
+                <time class="card__meta" datetime="2026-07-14">14. 07. 2026</time>
+                <h3 class="card__title"><a href="clanek.html">Stavíme pro Vás!</a></h3>
+                <p class="card__excerpt">Aktuální přehled největších investičních akcí na území města v realizaci.</p>
+              </div>
+            </article>
+            <article class="card">
+              <div class="card__body" style="padding-top:var(--space-xl)">
+                <time class="card__meta" datetime="2026-07-08">8. 07. 2026</time>
+                <h3 class="card__title"><a href="https://www.karvina.cz/deje-se/informace-pro-zajemce-o-koupi-pozemku-v-lokalite-rd-nad">Informace pro zájemce o koupi pozemků v Lokalitě RD nad Vagónkou</a></h3>
+                <p class="card__excerpt">V aukčním portále je již navedeno všech 14 pozemků.</p>
+              </div>
+            </article>
+            <article class="card">
+              <div class="card__body" style="padding-top:var(--space-xl)">
+                <time class="card__meta" datetime="2026-07-08">8. 07. 2026</time>
+                <h3 class="card__title"><a href="https://www.karvina.cz/mesto-karvina/dopravni-omezeni">Dopravní omezení</a></h3>
+                <p class="card__excerpt">Přehled aktuálních uzavírek a dopravních omezení na území města.</p>
+              </div>
+            </article>
+          </div>
+        </div>
+
+        <div class="news-panel">
+          <div class="grid grid--3">
+            <article class="card">
+              <img class="card__image" src="https://www.karvina.cz/uploads/gallery/detail/5948.jpg" alt="" loading="lazy">
+              <div class="card__body">
+                <time class="card__meta" datetime="2026-07-14">14. 07. 2026</time>
+                <h3 class="card__title"><a href="https://www.karvina.cz/deje-se/u-karvinskeho-more-zacala-vystavba-druheho-parkoviste">U Karvinského moře začala výstavba druhého parkoviště</a></h3>
+                <p class="card__excerpt">Větší z parkovišť pamatuje i na místa pro ZTP včetně částečné rekonstrukce chodníku.</p>
+              </div>
+            </article>
+            <article class="card">
+              <img class="card__image" src="https://www.karvina.cz/uploads/gallery/detail/5946.jpg" alt="" loading="lazy">
+              <div class="card__body">
+                <time class="card__meta" datetime="2026-07-13">13. 07. 2026</time>
+                <h3 class="card__title"><a href="https://www.karvina.cz/deje-se/karvina-se-dostala-do-oblibene-detske-knizni-serie">Karviná se dostala do oblíbené dětské knižní série</a></h3>
+                <p class="card__excerpt">Přeshraniční spolupráce a polský fenomén Kočičí tlupy.</p>
+              </div>
+            </article>
+            <article class="card">
+              <div class="card__body" style="padding-top:var(--space-xl)">
+                <time class="card__meta" datetime="2026-07-09">9. 07. 2026</time>
+                <h3 class="card__title"><a href="https://www.karvina.cz/deje-se/na-poliklinice-pribudou-nove-ambulance-i-dalsi-lekari">Na poliklinice přibudou nové ambulance i další lékaři</a></h3>
+                <p class="card__excerpt">Modernizace budovy v Karviné-Mizerově pokračuje podle harmonogramu.</p>
+              </div>
+            </article>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Tourism -->
+    <section class="section section--alt">
+      <div class="container">
+        <div class="section__header">
+          <div>
+            <h2>Turistika a volný čas</h2>
+            <p class="section__subtitle">Objevte krásy Těšínského Slezska a kulturní akce v regionu.</p>
+          </div>
+        </div>
+        <div class="grid grid--3">
+          <a href="https://www.karvina.cz/" class="tourism-card">
+            <img src="https://www.karvina.cz/uploads/gallery/detail/3114.jpg" alt="Sportoviště Karviná" loading="lazy">
+            <div class="tourism-card__overlay">
+              <h3>Sportoviště Karviná</h3>
+              <p>Nové sportoviště u Obchodní akademie</p>
+            </div>
+          </a>
+          <a href="https://www.karvina.cz/" class="tourism-card">
+            <img src="https://www.karvina.cz/uploads/gallery/detail/17824.jpg" alt="Zámek Fryštát" loading="lazy">
+            <div class="tourism-card__overlay">
+              <h3>Zámek Fryštát</h3>
+              <p>Empírový klenot Těšínského Slezska</p>
+            </div>
+          </a>
+          <a href="https://www.karvinainfo.cz/" class="tourism-card">
+            <img src="https://www.karvina.cz/uploads/gallery/detail/286.jpg" alt="Karviná Info" loading="lazy">
+            <div class="tourism-card__overlay">
+              <h3>Karviná Info</h3>
+              <p>Turistika, kultura, sport a kalendář akcí</p>
+            </div>
+          </a>
+        </div>
+      </div>
+    </section>
+
+    <!-- Calendar CTA -->
+    <section class="section">
+      <div class="container">
+        <div class="grid grid--2" style="align-items:stretch">
+          <div class="calendar-widget">
+            <h3>Kalendář akcí</h3>
+            <p>Kalendář akcí najdete na našem informačním webu www.karvinainfo.cz</p>
+            <a href="https://www.karvinainfo.cz/" class="btn btn--primary">Přejít na karvinainfo.cz</a>
+          </div>
+          <div class="cta-banner">
+            <div>
+              <h3>Bezpečná Karviná</h3>
+              <p>Informace o prevenci kriminality a bezpečnosti ve městě.</p>
+            </div>
+            <a href="https://www.karvina.cz/bezpecna-karvina" class="btn btn--secondary">Zjistit více</a>
+          </div>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <footer class="site-footer" role="contentinfo">
+    <div class="site-footer__grid">
+      <div>
+        <h3 class="site-footer__heading">Úřední hodiny</h3>
+        <p class="site-footer__text">
+          <strong>PO a ST 7:30 – 17:30</strong><br>
+          (přestávka 12:00 – 12:30)<br><br>
+          ÚT, ČT 7:30 – 16:00<br>
+          PÁ 7:30 – 13:00
+        </p>
+      </div>
+      <div>
+        <h3 class="site-footer__heading">Kontakty</h3>
+        <p class="site-footer__text">
+          Statutární město Karviná<br>
+          Fryštátská 72/1<br>
+          733 01 Karviná<br><br>
+          Tel.: (+420) 596 387 111<br>
+          E-mail: epodatelna@karvina.cz<br>
+          DS: es5bv8q
+        </p>
+        <div class="site-footer__social">
+          <a href="https://www.facebook.com/karvina.oficialni.stranka.mesta/" aria-label="Facebook" target="_blank" rel="noopener">FB</a>
+          <a href="https://twitter.com/mmkarvina" aria-label="X" target="_blank" rel="noopener">X</a>
+          <a href="https://www.instagram.com/karvina_official/" aria-label="Instagram" target="_blank" rel="noopener">IG</a>
+          <a href="https://www.youtube.com/channel/UCzZkbmOp690QcaRNna1wfxw" aria-label="YouTube" target="_blank" rel="noopener">YT</a>
+        </div>
+      </div>
+      <div>
+        <h3 class="site-footer__heading">Nejčastěji hledáte</h3>
+        <ul class="site-footer__links">
+          <li><a href="https://www.karvina.cz/mesto-karvina/zivnostensky-urad">Živnostenský úřad</a></li>
+          <li><a href="https://www.karvina.cz/deje-se/karvinsky-zpravodaj">Karvinský zpravodaj</a></li>
+          <li><a href="https://www.karvina.cz/mesto-karvina/webkamera-namesti">Webkamera – náměstí</a></li>
+          <li><a href="uredni-deska.html">Úřední deska</a></li>
+        </ul>
+      </div>
+      <div>
+        <h3 class="site-footer__heading">Menu</h3>
+        <ul class="site-footer__links">
+          <li><a href="https://www.karvina.cz/mesto-karvina">Město Karviná</a></li>
+          <li><a href="magistrat.html">Magistrát</a></li>
+          <li><a href="https://www.karvina.cz/mestska-policie">Městská policie</a></li>
+          <li><a href="https://www.karvina.cz/magistrat/potrebuji-si-vyridit">Potřebuji vyřídit</a></li>
+          <li><a href="https://www.karvina.cz/kontakty">Kontakty</a></li>
+        </ul>
+      </div>
+    </div>
+    <div class="site-footer__bottom">
+      <span>© 2016–2026 Statutární město Karviná</span>
+      <span>Prohlášení o přístupnosti · GDPR · Cookies</span>
+    </div>
+  </footer>
+
+  <div class="prototype-badge">Návrh redesignu – prototyp</div>
+  <script src="js/main.js"></script>
+</body>
+</html>
